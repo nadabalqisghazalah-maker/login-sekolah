@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Portal Sekolah</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body {
+      background: linear-gradient(120deg, #f6f8fc 0%, #e0e7ef 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-card {
+      background: #fff;
+      padding: 2.5rem 2rem 2rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(30, 47, 90, 0.08);
+      min-width: 320px;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .school-logo {
+      width: 62px;
+      height: 62px;
+      margin-bottom: 1.2rem;
+    }
+    .school-title {
+      margin: 0 0 1.6rem 0;
+      font-size: 1.3rem;
+      color: #24325c;
+      font-weight: 600;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+      width: 100%;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.34rem;
+      color: #24325c;
+      font-size: 0.99rem;
+      font-weight: 500;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid #d3d7df;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #f6f8fc;
+      transition: border 0.2s;
+    }
+    .form-group input:focus {
+      border: 1.5px solid #4e73df;
+      outline: none;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 0.8rem;
+      background: #4e73df;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-top: 0.4rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-btn:hover {
+      background: #3457b1;
+    }
+    .login-footer {
+      margin-top: 1.8rem;
+      color: #a1a7b3;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <img class="school-logo" src="https://pribadibandung.edunav.net/static/media/logo.807d8e9c.png" alt="Logo Sekolah" />
+    <h2 class="school-title">Portal Sekolah</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username" placeholder="Masukkan username" autocomplete="username" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Masukkan password" autocomplete="current-password" />
+      </div>
+      <button class="login-btn" type="submit">Masuk</button>
+    </form>
+    <div class="login-footer">
+      <small>&copy; 2025 Nama Sekolah. All rights reserved.</small>
+    </div>
+  </div>
+</body>
+</html>
